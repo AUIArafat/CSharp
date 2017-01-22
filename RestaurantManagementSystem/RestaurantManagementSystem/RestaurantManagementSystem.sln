@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManagementSystem.Data", "RestaurantManagementSystem.Data\RestaurantManagementSystem.Data.csproj", "{38CF5E10-6C66-46A2-855E-07AF3502D8EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManagementSystem.Entity", "RestaurantManagementSystem.Entity\RestaurantManagementSystem.Entity.csproj", "{F2047C5D-588C-43BF-BD8B-10804AF3176B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManagementSystem.Service", "RestaurantManagementSystem.Service\RestaurantManagementSystem.Service.csproj", "{3A7830D9-3A93-4715-A006-3E02A8E91184}"
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "RestaurantManagementSystem.SignUp.vshost", "RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.SignUp.vshost.exe", "{6B50A8F3-7B7E-4A4A-9EC1-FD794DDA5352}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.SignUp.vshost.exe
+		RemoteMachine = ARAFAT
+		StartingDirectory = C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug
+		Environment = Default
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManagementSystem.Main", "RestaurantManagementSystem.Main\RestaurantManagementSystem.Main.csproj", "{12326A95-F1AC-4D76-9511-EC76FAC51AEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38CF5E10-6C66-46A2-855E-07AF3502D8EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38CF5E10-6C66-46A2-855E-07AF3502D8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38CF5E10-6C66-46A2-855E-07AF3502D8EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{38CF5E10-6C66-46A2-855E-07AF3502D8EA}.Debug|x86.Build.0 = Debug|Any CPU
+		{38CF5E10-6C66-46A2-855E-07AF3502D8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38CF5E10-6C66-46A2-855E-07AF3502D8EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38CF5E10-6C66-46A2-855E-07AF3502D8EA}.Release|x86.ActiveCfg = Release|Any CPU
+		{38CF5E10-6C66-46A2-855E-07AF3502D8EA}.Release|x86.Build.0 = Release|Any CPU
+		{F2047C5D-588C-43BF-BD8B-10804AF3176B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2047C5D-588C-43BF-BD8B-10804AF3176B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2047C5D-588C-43BF-BD8B-10804AF3176B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F2047C5D-588C-43BF-BD8B-10804AF3176B}.Debug|x86.Build.0 = Debug|Any CPU
+		{F2047C5D-588C-43BF-BD8B-10804AF3176B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2047C5D-588C-43BF-BD8B-10804AF3176B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2047C5D-588C-43BF-BD8B-10804AF3176B}.Release|x86.ActiveCfg = Release|Any CPU
+		{F2047C5D-588C-43BF-BD8B-10804AF3176B}.Release|x86.Build.0 = Release|Any CPU
+		{3A7830D9-3A93-4715-A006-3E02A8E91184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A7830D9-3A93-4715-A006-3E02A8E91184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A7830D9-3A93-4715-A006-3E02A8E91184}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3A7830D9-3A93-4715-A006-3E02A8E91184}.Debug|x86.Build.0 = Debug|Any CPU
+		{3A7830D9-3A93-4715-A006-3E02A8E91184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A7830D9-3A93-4715-A006-3E02A8E91184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A7830D9-3A93-4715-A006-3E02A8E91184}.Release|x86.ActiveCfg = Release|Any CPU
+		{3A7830D9-3A93-4715-A006-3E02A8E91184}.Release|x86.Build.0 = Release|Any CPU
+		{6B50A8F3-7B7E-4A4A-9EC1-FD794DDA5352}.Debug|Any CPU.ActiveCfg = Release|x86
+		{6B50A8F3-7B7E-4A4A-9EC1-FD794DDA5352}.Debug|x86.ActiveCfg = Release|x86
+		{6B50A8F3-7B7E-4A4A-9EC1-FD794DDA5352}.Release|Any CPU.ActiveCfg = Release|x86
+		{6B50A8F3-7B7E-4A4A-9EC1-FD794DDA5352}.Release|x86.ActiveCfg = Release|x86
+		{12326A95-F1AC-4D76-9511-EC76FAC51AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12326A95-F1AC-4D76-9511-EC76FAC51AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12326A95-F1AC-4D76-9511-EC76FAC51AEA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{12326A95-F1AC-4D76-9511-EC76FAC51AEA}.Debug|x86.Build.0 = Debug|Any CPU
+		{12326A95-F1AC-4D76-9511-EC76FAC51AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12326A95-F1AC-4D76-9511-EC76FAC51AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12326A95-F1AC-4D76-9511-EC76FAC51AEA}.Release|x86.ActiveCfg = Release|Any CPU
+		{12326A95-F1AC-4D76-9511-EC76FAC51AEA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

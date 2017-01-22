@@ -1,0 +1,64 @@
+﻿<Window x:Class="RestaurantManagementSystem.Main.AddOperator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurantManagementSystem.Main"
+        mc:Ignorable="d"
+        Title="AddOperator" Height="600" Width="1000" Loaded="Window_Loaded">
+    <DockPanel LastChildFill="False">
+    <DockPanel DockPanel.Dock="Left" LastChildFill="False">
+        <StackPanel DockPanel.Dock="Left">
+            <TextBlock Text="Name" Margin="10,5,10,15"/>
+            <TextBlock Text="Contact No" Margin="10,5,10,15"/>
+            <TextBlock Text="Email" Margin="10,5,10,15"/>
+            <TextBlock Text="Address" Margin="10,5,10,15"/>
+                <TextBlock Text="Initial Salary" Margin="10,5,10,15"/>
+                <TextBlock Text="Join Date" Margin="10,5,10,15"/>
+                
+            </StackPanel>
+
+        <StackPanel DockPanel.Dock="Right">
+            <TextBox Name="nameTextBox"  Margin="10,5,10,15"/>
+            <TextBox Name="contactNoTextBox" Margin="10,5,10,15"/>
+            <TextBox Name="emailTextBox" Margin="10,5,10,15"/>
+            <TextBox Name="addressTextBox" Margin="10,5,10,15"/>
+            <TextBox Name="initialSalaryTextBox" Margin="10,5,10,15"/>
+                <DatePicker Name="joinDatePicker" Margin="10,5,10,15"/>
+            <Button Content="Add" Name="AddButton" Click="AddButton_Click"/>
+            </StackPanel>
+
+
+        </DockPanel>
+        <StackPanel DockPanel.Dock="Right">
+            <DataGrid Name="addOperatorDataGrid" Width="auto" Height="auto" CanUserAddRows="False" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Operator Id" Binding="{Binding Id}" Width="1*"/>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="1*"/>
+                    <DataGridTextColumn Header="Contact No" Binding="{Binding ContactNo}" Width="1*"/>
+                    <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="1*"/>
+                    <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="1*"/>
+                    <DataGridTextColumn Header="Initial Salary" Binding="{Binding InitialSalary}" Width="1*"/>
+                    <DataGridTextColumn Header="Join Date" Binding="{Binding JoinDate}" Width="1*"/>
+                    <DataGridTemplateColumn Header="Edit" Width="1*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="EDIT" Click="EditButton_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Delete" Width="1*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="DELETE" Click="DeleteButton_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        
+    </DockPanel>
+</Window>

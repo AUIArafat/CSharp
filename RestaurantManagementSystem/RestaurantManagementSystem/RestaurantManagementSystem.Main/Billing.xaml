@@ -1,0 +1,93 @@
+﻿<Window x:Class="RestaurantManagementSystem.Main.Billing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurantManagementSystem.Main"
+        mc:Ignorable="d"
+        Title="Billing" Height="600" Width="1000" >
+    <DockPanel >
+        <Grid DockPanel.Dock="Top" Margin="10" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Billing No" Grid.Row="0" Grid.Column="0" Padding="10"/>
+            <Label Content="Table No" Grid.Row="0" Grid.Column="1" Padding="10"/>
+            <Label Content="Contact" Grid.Row="0" Grid.Column="2" Padding="10"/>
+            <Label Content="Customer Name" Grid.Row="0" Grid.Column="3" Padding="10"/>
+            <Label Content="Billing Date" Grid.Row="0" Grid.Column="4" Padding="10"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Name="billingNo" Margin="5" Padding="5"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Name="tableNo" Margin="5" Padding="5"/>
+            <TextBox Grid.Row="1" Grid.Column="2" Name="contact" Margin="5" Padding="5"/>
+            <TextBox Grid.Row="1" Grid.Column="3" Name="customerName" Margin="5" Padding="5"/>
+            <DatePicker Grid.Row="1" Grid.Column="4" Name="billingDate" Margin="5" Padding="5"/>
+        </Grid>
+        <StackPanel DockPanel.Dock="Left" Margin="10">
+            <Label Name="CategoryName" Content="Category Name"  Margin="5" Padding="5"/>
+            <WrapPanel>
+                <ComboBox x:Name="categoryComboBox" Padding="5,5,100,5" Margin="5" />
+                <Button Name="NextButton" Content="Next" Padding="10,5,10,5" Margin="5" Click="GoButton_Click"/>
+            </WrapPanel>
+            <Label Content="Menu Items"/>
+            <WrapPanel>
+                <ComboBox x:Name="menuComboBox" Padding="5,5,100,5" Margin="5" />
+                <Button Name="NextButton1" Content="Next" Padding="10,5,10,5" Margin="5" Click="NextButton_Click"/>
+            </WrapPanel>
+            <Label Content="Price"/>
+            <TextBox Name="priceTextBox" Margin="5" Padding="5" />
+            <Label Content="Quantity" />
+            <TextBox Name="quantityTextBox" Margin="5" Padding="5" />
+
+            <Button Name="AddButton" Content="ADD" Margin="5" Padding="5" Click="addButton_Click"/>
+        </StackPanel>
+        <Grid DockPanel.Dock="Bottom" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Sub Total(tk)" Grid.Row="0" Grid.Column="0" Padding="10"/>
+            <Label Content="Service Tax" Grid.Row="0" Grid.Column="1" Padding="10"/>
+            <Label Content="Vat(%)" Grid.Row="0" Grid.Column="2" Padding="10"/>
+            <Label Content="Discount(%)" Grid.Row="0" Grid.Column="3" Padding="10"/>
+            <TextBox Name="subTotal" Text="0" Grid.Column="0" Grid.Row="1"  Margin="5" Padding="5"/>
+            <TextBox Name="serviceTax" Text="0" Grid.Row="1" Grid.Column="1"  Margin="5" Padding="5"/>
+            <TextBox Name="vat" Grid.Row="1" Grid.Column="2" Text="10" TextAlignment="Center"  Margin="5" Padding="5"/>
+            <TextBox Name="discount" Grid.Row="1" Grid.Column="3" Text="5" TextAlignment="Center"  Margin="5" Padding="5"/>
+            <Button Content="Cancel" Grid.Column="2" Grid.Row="2"  Margin="5" Padding="5" Click="cancelButton_Click"/>
+            <Button Content="Print" Grid.Row="2" Grid.Column="3"  Margin="5" Padding="5" Click="printButton_Click"/>
+        </Grid>
+        <DataGrid  Name="billingDataGrid" DockPanel.Dock="Right" Height="Auto" VerticalAlignment="Top" Width="auto" AutoGenerateColumns="False" CanUserAddRows="False" Loaded="billingDataGrid_Loaded">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Order Id" Binding="{Binding OrderId}" Width="1*"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding CategoryName}" Width="1*"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="1*"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding OrderPrice}" Width="*"/>
+                <DataGridTemplateColumn Header="Delete" Width="1*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Delete" Click="orderDeleteButton_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+
+</Window>
+

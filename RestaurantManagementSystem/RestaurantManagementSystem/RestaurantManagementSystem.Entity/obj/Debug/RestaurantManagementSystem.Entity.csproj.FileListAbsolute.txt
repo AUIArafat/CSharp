@@ -1,0 +1,14 @@
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Entity\bin\Debug\RestaurantManagementSystem.Entity.dll
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Entity\bin\Debug\RestaurantManagementSystem.Entity.pdb
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Entity\bin\Debug\RestaurantManagementSystem.Data.dll
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Entity\bin\Debug\RestaurantManagementSystem.Data.pdb
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Entity\obj\Debug\RestaurantManagementSystem.Entity.csprojResolveAssemblyReference.cache
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Entity\obj\Debug\RestaurantManagementSystem.Entity.dll
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Entity\obj\Debug\RestaurantManagementSystem.Entity.pdb
+C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem.Entity\bin\Debug\RestaurantManagementSystem.Entity.dll
+C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem.Entity\bin\Debug\RestaurantManagementSystem.Entity.pdb
+C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem.Entity\bin\Debug\RestaurantManagementSystem.Data.dll
+C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem.Entity\bin\Debug\RestaurantManagementSystem.Data.pdb
+C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem.Entity\obj\Debug\RestaurantManagementSystem.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem.Entity\obj\Debug\RestaurantManagementSystem.Entity.dll
+C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem.Entity\obj\Debug\RestaurantManagementSystem.Entity.pdb

@@ -1,0 +1,27 @@
+﻿<Window x:Class="RestaurantManagementSystem.Main.ItemOperationHome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurantManagementSystem.Main"
+        mc:Ignorable="d"
+        Title="HomePage" Height="600" Width="1000">
+    <DockPanel Background="White">
+        <WrapPanel DockPanel.Dock="Top" HorizontalAlignment="Right" Margin="10"/>
+        <Grid Margin="10" DockPanel.Dock="Bottom" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                
+            </Grid.ColumnDefinitions>
+            <Button Content="Add Department" Grid.Row="0" Grid.Column="0" Background="Beige" Margin="20" Click="AddDepartmentButton_Click" FontSize="30"/>
+            <Button Content="Add Category" Grid.Row="0" Grid.Column="1" Background="Beige" Margin="20" Click="AddCategoryButton_Click" FontSize="30"/>
+            <Button Content="Menu Items" Grid.Row="0" Grid.Column="2"  Background="Beige" Margin="20" Click="MenuItemsButton_Click" FontSize="30"/>
+
+        </Grid>
+    </DockPanel>
+</Window>

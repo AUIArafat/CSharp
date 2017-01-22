@@ -1,0 +1,12 @@
+﻿<Window x:Class="DBImageSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="350">
+    <Canvas>
+        <Image Name="openedImageHolder"  Height="150" Canvas.Left="10" Canvas.Top="34" Width="150"/>
+        <Image Name="dbImageHolder"  Height="150" Canvas.Left="182" Canvas.Top="34" Width="150"/>
+        <Button Name="openButton" Content="Open" Canvas.Left="10" Canvas.Top="189" Width="100" Height="25" Click="openButton_Click"/>
+        <Button Name="saveButton" Content="Save to DB" Canvas.Left="10" Canvas.Top="219" Width="100" Height="25" Click="saveButton_Click"/>
+        <Button x:Name="showButton" Content="Show from DB" Canvas.Left="182" Canvas.Top="189" Width="100" Height="25" Click="showButton_Click"/>
+    </Canvas>
+</Window>

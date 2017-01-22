@@ -1,0 +1,32 @@
+﻿<Window x:Class="RestaurantManagementSystem.Main.Edit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurantManagementSystem.Main"
+        mc:Ignorable="d"
+        Title="Edit" Height="300" Width="400"
+        Loaded="Window_Loaded">
+    <StackPanel DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="20" Name="Submit">
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Left">
+                <TextBlock Text="ExpenseID"  Margin="10,5,10,15" />
+                <TextBlock Text="ExpenseCategory"  Margin="10,5,10,15"/>
+                <TextBlock Text="ExpenseDate"  Margin="10,5,10,15"/>
+                <TextBlock Text="ExpenseDescription"  Margin="10,5,10,10"/>
+                <TextBlock Text="ExpenseAmount"  Margin="10,5,10,10"/>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Right">
+                <TextBlock x:Name="expenseIdTextBox" Height="23"  Width="120" Margin="5"/>
+                <TextBox x:Name="expenseCategoryTextBox" Height="23" Width="120" Margin="5"/>
+                <DatePicker x:Name="expenseDate" Height="23"  Width="120" Margin="5" />
+                <TextBox x:Name="expenseDescriptionTextBox" Height="23"  Width="120" Margin="5"/>
+                <TextBox x:Name="expenseAmountTextBox" Height="23"  Width="120" Margin="5"/>
+            </StackPanel>
+        </DockPanel>
+        <WrapPanel Margin="10" HorizontalAlignment="Right">
+            <Button x:Name="editButton" Content="Update" Width="75" Click="editButton_Click" Background="SkyBlue"/>
+            <Button x:Name="cancelButton" Content="Cancel" Width="75" Click="cancelButton_Click" Background="SkyBlue"/>
+        </WrapPanel>
+    </StackPanel>
+</Window>

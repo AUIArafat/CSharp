@@ -1,0 +1,28 @@
+﻿<Window x:Class="RestaurantManagementSystem.Main.EditOperatorInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurantManagementSystem.Main"
+        mc:Ignorable="d"
+        Title="EditOperatorInfo" Height="300" Width="400">
+    <DockPanel>
+    <StackPanel DockPanel.Dock="Left">
+        <TextBlock Text="Name" Margin="10,5,10,15"/>
+        <TextBlock Text="Contact No" Margin="10,5,10,15"/>
+        <TextBlock Text="Email" Margin="10,5,10,15"/>
+        <TextBlock Text="Address" Margin="10,5,10,15"/>
+        <TextBlock Text="Initial Salary" Margin="10,5,10,15"/>
+
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Right">
+            <TextBox Name="nameTextBox"  Margin="10,5,10,15"/>
+            <TextBox Name="contactNoTextBox" Margin="10,5,10,15"/>
+            <TextBox Name="emailTextBox" Margin="10,5,10,15"/>
+            <TextBox Name="addressTextBox" Margin="10,5,10,15"/>
+            <TextBox Name="initialSalaryTextBox" Margin="10,5,10,15"/>
+            <Button Content="Update" Name="AddButton" Click="UpdateButton_Click"/>
+        </StackPanel>
+    </DockPanel>
+</Window>
+

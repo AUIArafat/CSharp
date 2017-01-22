@@ -1,0 +1,9 @@
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Data\bin\Debug\RestaurantManagementSystem.Data.dll
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Data\bin\Debug\RestaurantManagementSystem.Data.pdb
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Data\obj\Debug\RestaurantManagementSystem.Data.csprojResolveAssemblyReference.cache
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Data\obj\Debug\RestaurantManagementSystem.Data.dll
+C:\Users\mdkamrul\Dropbox\RestaurantManagementSystem\RestaurantManagementSystem.Data\obj\Debug\RestaurantManagementSystem.Data.pdb
+C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem.Data\bin\Debug\RestaurantManagementSystem.Data.dll
+C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem.Data\bin\Debug\RestaurantManagementSystem.Data.pdb
+C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem.Data\obj\Debug\RestaurantManagementSystem.Data.dll
+C:\Users\Md.Arafatul\Dropbox\C#\Project\RestaurantManagementSystem\RestaurantManagementSystem.Data\obj\Debug\RestaurantManagementSystem.Data.pdb

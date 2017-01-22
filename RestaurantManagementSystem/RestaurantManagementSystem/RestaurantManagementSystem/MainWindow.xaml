@@ -1,0 +1,26 @@
+﻿<Window x:Class="RestaurantManagementSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurantManagementSystem.SignUp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="700">
+    <Canvas>
+        <TextBlock x:Name="nameBlock" Canvas.Left="39" TextWrapping="Wrap" Canvas.Top="94" Width="119" Height="23" FontSize="20"><Run Text="Name"/></TextBlock>
+        <TextBlock x:Name="dobBlock" Canvas.Left="39" TextWrapping="Wrap" Canvas.Top="143" Width="119" Height="23" FontSize="20" Text="DOB"/>
+        <TextBlock Text="{Binding Start, StringFormat=d}" />
+        <DatePicker Canvas.Left="158" Canvas.Top="149" Height="43" Width="137" x:Name="dob"/>
+        <TextBox x:Name="nameBox" Height="35" Canvas.Left="158" TextWrapping="Wrap" Canvas.Top="94" Width="137"/>
+        <Image x:Name="image2" Height="126" Width="137" Canvas.Left="331" Canvas.Top="40" OpacityMask="#FFE41414">
+
+        </Image>
+        <Button x:Name="button1" Content="Upload" Canvas.Left="361" Canvas.Top="171" Width="75" Click="button1_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" Height="126" Canvas.Left="331" Canvas.Top="40" Width="137"/>
+        <Button x:Name="button1_Copy" Content="Submit" Canvas.Left="199" Canvas.Top="234" Width="96" Click="Submit" Height="40"/>
+        <TextBlock x:Name="Id" Canvas.Left="39" TextWrapping="Wrap" Canvas.Top="40" Width="119" Height="23" FontSize="20" Text="ID"/>
+        <TextBox x:Name="idBox" Height="35" Canvas.Left="158" TextWrapping="Wrap" Canvas.Top="40" Width="137"/>
+        <Button x:Name="button" Content="Cancel" Canvas.Left="310" Canvas.Top="234" Width="94" Height="40" Click="button_Click"/>
+
+    </Canvas>
+</Window>

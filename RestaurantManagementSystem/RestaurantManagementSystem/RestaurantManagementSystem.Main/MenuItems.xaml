@@ -1,0 +1,44 @@
+﻿<Window x:Class="RestaurantManagementSystem.Main.MenuItems"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurantManagementSystem.Main"
+        mc:Ignorable="d"
+        Title="Menu Items" Height="600" Width="1000">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="20" Name="Submit">
+            <DockPanel>
+                <WrapPanel DockPanel.Dock="Left">
+                    <StackPanel >
+                        <TextBlock Text="Category Name"  Margin="10,5,10,15"/>
+                        <TextBlock Text="Menu Items"  Margin="10,5,10,15"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <ComboBox x:Name="categoryNameComboBox" Height="23"  Width="120" Margin="5"/>
+                        <TextBox x:Name="menuItemsTextBox" Height="23"   Width="120" Margin="5" />
+                        
+                    </StackPanel>
+                </WrapPanel>
+                
+            </DockPanel>
+            <WrapPanel Margin="10" HorizontalAlignment="Center">
+                <Button x:Name="addButton" Content="Add"  Width="75" Click="addButton_Click" Background="SkyBlue"/>
+            </WrapPanel>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Bottom">
+            <DataGrid x:Name="menuDataGrid" AutoGenerateColumns="False" Height="auto"  Width="Auto" SelectionMode="Single"  CanUserAddRows="False" Loaded="Window_Loaded">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Category ID" Binding="{Binding CategoryId}" Width="1*"/>
+                    <DataGridTextColumn Header="Category Name" Binding="{Binding CategoryName}" Width="1*"/>
+                    <DataGridTextColumn Header="Price" Binding="{Binding CategoryPrice}" Width="1*"/>
+                    <DataGridTextColumn Header="Category Image" Binding="{Binding Image}" Width="1*"/>
+                    <DataGridTextColumn Header="Menu Item" Binding="{Binding MenuList}" Width="1*" />
+                    
+                    
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
+    </DockPanel>
+</Window>
